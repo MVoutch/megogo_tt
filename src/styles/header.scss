@@ -1,0 +1,51 @@
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  &__menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: -1;
+    opacity: 50%;
+  }
+
+  &__container {
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Align vertically */
+    justify-content: center;
+  }
+
+  &__header {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__subheader {
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  &__below {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translate(-50%, 0);
+  }
+}
